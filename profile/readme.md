@@ -266,9 +266,20 @@ src/
 
 **0. 저장소 클론**
 
+**GDFB_Server**
 ```
-  git clone https://github.com/letsgojh/GGN_NODE_SERVER.git main
-  cd testgit
+  git clone https://github.com/GoodDayForBusiness/GDFB_Server.git
+  cd GDFB_Server
+```
+**GDFB-Node_Server**
+```
+  git clone https://github.com/GoodDayForBusiness/GDFB-Node_Server.git
+  cd GDFB-Node_Server
+```
+**GDFB-Client**
+```
+  git clone https://github.com/GoodDayForBusiness/GDFB-Client.git
+  cd GDFB-Client
 ```
 
 
@@ -280,7 +291,7 @@ client와 server 그리고 node-server 디렉토리에 각각 .env파일을 생�
 **client/.env**
 
     OPENAI_API_KEY=OPEN AI Platform에서 발급받은 API KEY
-    VITE_AGENTICA_WS_URL=ws://localhost:3000/chat
+    VITE_AGENTICA_WS_URL=ws://localhost:3001/chat
 
 
 **server/.env**
@@ -296,20 +307,17 @@ client와 server 그리고 node-server 디렉토리에 각각 .env파일을 생�
 
 **2. Agentica client 서버 실행 (프론트)**
 
-    cd client
     pnpm install
     pnpm start
 
 **3. Node 백엔드 서버 실행**
 
-    cd node-server
     npm install
     npm run build //dist/ 생성
     npm start //지정한 port에서 서버 가동
 
 **4. Agentica 서버 실행**
 
-    cd agentica-server
     pnpm install
     pnpm build
     pnpm start
